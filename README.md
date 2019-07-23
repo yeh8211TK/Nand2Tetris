@@ -1,4 +1,4 @@
-# Nand2Tetris
+## Nand2Tetris
 
 ### Course website: https://www.nand2tetris.org/course
 
@@ -11,3 +11,7 @@ Use the NAND to create the logic gates in the following order:
 #### Project 2: Boolean Arithmetic
 
 - HalfAdder、FullAdder、Add16、Inc16、ALU
+
+#### Project 3: Sequential Logic
+
+- Bit、Register、RAM8、RAM64、RAM512、RAM4k、RAM16k、PC
