@@ -1,6 +1,6 @@
 ## Nand2Tetris
 
-### Course website: https://www.nand2tetris.org/course
+#### Course website: https://www.nand2tetris.org/course
 
 #### Project 1: Boolean Logic
 
