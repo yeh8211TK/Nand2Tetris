@@ -1,0 +1,50 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/Register.hdl
+
+/**
+ * 16-bit register:
+ * If load[t] == 1 then out[t+1] = in[t]
+ * else out does not change
+ */
+
+CHIP Register {
+    IN in[16], load;
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+    Mux(a=dffmuxout0, b=in[0], sel=load, out=muxout0);
+    DFF(in=muxout0, out=dffmuxout0, out=out[0]);
+    Mux(a=dffmuxout1, b=in[1], sel=load, out=muxout1);
+    DFF(in=muxout1, out=dffmuxout1, out=out[1]);
+    Mux(a=dffmuxout2, b=in[2], sel=load, out=muxout2);
+    DFF(in=muxout2, out=dffmuxout2, out=out[2]);
+    Mux(a=dffmuxout3, b=in[3], sel=load, out=muxout3);
+    DFF(in=muxout3, out=dffmuxout3, out=out[3]);
+    Mux(a=dffmuxout4, b=in[4] ,sel=load, out=muxout4);
+    DFF(in=muxout4, out=dffmuxout4, out=out[4]);
+    Mux(a=dffmuxout5, b=in[5] ,sel=load, out=muxout5);
+    DFF(in=muxout5, out=dffmuxout5, out=out[5]);
+    Mux(a=dffmuxout6, b=in[6] ,sel=load, out=muxout6);
+    DFF(in=muxout6, out=dffmuxout6, out=out[6]);
+    Mux(a=dffmuxout7, b=in[7] ,sel=load, out=muxout7);
+    DFF(in=muxout7, out=dffmuxout7, out=out[7]);
+    Mux(a=dffmuxout8, b=in[8] ,sel=load, out=muxout8);
+    DFF(in=muxout8, out=dffmuxout8, out=out[8]);
+    Mux(a=dffmuxout9, b=in[9] ,sel=load, out=muxout9);
+    DFF(in=muxout9, out=dffmuxout9, out=out[9]);
+    Mux(a=dffmuxout10, b=in[10], sel=load, out=muxout10);
+    DFF(in=muxout10, out=dffmuxout10, out=out[10]);
+    Mux(a=dffmuxout11, b=in[11], sel=load, out=muxout11);
+    DFF(in=muxout11, out=dffmuxout11, out=out[11]);
+    Mux(a=dffmuxout12, b=in[12], sel=load, out=muxout12);
+    DFF(in=muxout12, out=dffmuxout12, out=out[12]);
+    Mux(a=dffmuxout13, b=in[13], sel=load, out=muxout13);
+    DFF(in=muxout13, out=dffmuxout13, out=out[13]);
+    Mux(a=dffmuxout14, b=in[14], sel=load, out=muxout14);
+    DFF(in=muxout14, out=dffmuxout14, out=out[14]);
+    Mux(a=dffmuxout15, b=in[15], sel=load, out=muxout15);
+    DFF(in=muxout15, out=dffmuxout15, out=out[15]);
+}
