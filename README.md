@@ -14,4 +14,4 @@ Use the NAND to create the logic gates in the following order:
 
 #### Project 3: Sequential Logic
 
-- Bit、Register、RAM8、RAM64、RAM512、RAM4k、RAM16k、PC
+- 1-bit Register、16-bits Register、RAM8、RAM64、RAM512、RAM4k、RAM16k、Program counter
