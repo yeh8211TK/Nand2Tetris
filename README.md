@@ -32,7 +32,7 @@ Compositions: CPU (ALU、data register、address register、program counter)、M
 
 #### References:
 
-1. Book: *The Elements of Computing Systems
+1. Book: *The Elements of Computing Systems*
 
 - [Appendix A: Hardware Description Language (HDL)](https://drive.google.com/file/d/1qzffR9le13QvR_w-JqY7RTsZU-b3eaFP/view)
 
